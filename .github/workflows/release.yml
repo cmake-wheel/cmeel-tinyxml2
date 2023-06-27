@@ -46,6 +46,10 @@ jobs:
         with:
           submodules: 'true'
           fetch-depth: 0
+      - name: debug
+        run: git tag -l
+      - name: debug
+        run: git show ${{ github.ref_name }}
       - name: validate signature
         run: >
           git verify-tag --raw ${{ github.ref_name }} 2>&1
