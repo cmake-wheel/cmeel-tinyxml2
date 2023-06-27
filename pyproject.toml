@@ -14,7 +14,7 @@ homepage = "https://github.com/cmake-wheel/cmeel-tinyxml2"
 repository = "https://github.com/cmake-wheel/cmeel-tinyxml2.git"
 
 [tool.cmeel]
-build-number = 3
+build-number = 4
 py3-none = true
 source = "tinyxml2"
 
