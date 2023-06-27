@@ -46,18 +46,14 @@ jobs:
         with:
           submodules: 'true'
       - name: debug
-        run: git tag -l
-      - name: debug
-        run: git fetch -t
-      - name: debug
-        run: git verify-tag --raw ${{ github.ref_name }}
+        run: git verify-commit --raw ${{ github.ref_name }}
       - name: debug
         run: curl https://github.com/nim65s.gpg | gpg --import
       - name: debug
-        run: git verify-tag --raw ${{ github.ref_name }}
+        run: git verify-commit --raw ${{ github.ref_name }}
       - name: validate signature
         run: >
-          git verify-tag --raw ${{ github.ref_name }} 2>&1
+          git verify-commit --raw ${{ github.ref_name }} 2>&1
           | grep -q 'VALIDSIG 9B1A79065D2F2B806C8A5A1C7D2ACDAF4653CF28'
       - uses: actions/setup-python@v4
         with:
