@@ -47,6 +47,12 @@ jobs:
           submodules: 'true'
           fetch-depth: 0
       - name: debug
+        run: git tag -l
+      - name: debug
+        run: git fetch -t
+      - name: debug
+        run: git verify-tag --raw ${{ github.ref_name }}
+      - name: debug
         run: curl https://github.com/nim65s.gpg | gpg --import
       - name: debug
         run: git verify-tag --raw ${{ github.ref_name }}
