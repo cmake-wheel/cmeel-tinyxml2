@@ -46,8 +46,6 @@ jobs:
         with:
           submodules: 'true'
       - name: debug
-        run: git verify-commit --raw ${{ github.ref_name }}
-      - name: debug
         run: curl https://github.com/nim65s.gpg | gpg --import
       - name: debug
         run: git verify-commit --raw ${{ github.ref_name }}
