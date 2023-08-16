@@ -15,7 +15,7 @@ repository = "https://github.com/cmake-wheel/cmeel-tinyxml2.git"
 
 [tool.cmeel]
 build-number = 13
-py3-none = true
+has-sitelib = false
 source = "tinyxml2"
 
 [tool.tomlsort]
