@@ -14,7 +14,7 @@ homepage = "https://github.com/cmake-wheel/cmeel-tinyxml2"
 repository = "https://github.com/cmake-wheel/cmeel-tinyxml2.git"
 
 [tool.cmeel]
-configure-options = ["-Dtinyxml2_SHARED_LIBS=ON"]
+configure-args = ["-Dtinyxml2_SHARED_LIBS=ON"]
 has-sitelib = false
 source = "tinyxml2"
 upstream-version = "9.0.0"
