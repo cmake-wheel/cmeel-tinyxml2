@@ -15,6 +15,7 @@ repository = "https://github.com/cmake-wheel/cmeel-tinyxml2.git"
 
 [tool.cmeel]
 build-number = 13
+configure-options = ["-Dtinyxml2_SHARED_LIBS=ON"]
 has-sitelib = false
 source = "tinyxml2"
 
