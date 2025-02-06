@@ -7,7 +7,7 @@ description = "cmeel distribution for TinyXML-2"
 license = "Zlib"
 name = "cmeel-tinyxml2"
 requires-python = ">= 3.8"
-version = "9.0.0.2"
+version = "10.0.0"
 
 [project.urls]
 homepage = "https://github.com/cmake-wheel/cmeel-tinyxml2"
@@ -18,7 +18,6 @@ upstream = "http://leethomason.github.io/tinyxml2/"
 configure-args = ["-Dtinyxml2_SHARED_LIBS=ON"]
 has-sitelib = false
 source = "tinyxml2"
-upstream-version = "9.0.0"
 
 [tool.tomlsort]
 all = true
